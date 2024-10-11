@@ -27,10 +27,6 @@ Future<T?> showAlignedDialog<T>({
   RouteTransitionsBuilder? transitionsBuilder,
   Duration? duration,
 }) {
-  assert(builder != null);
-  assert(barrierDismissible != null);
-  assert(isGlobal != null);
-  assert(useRootNavigator != null);
   assert(debugCheckHasMaterialLocalizations(context));
 
   final CapturedThemes themes = InheritedTheme.capture(
@@ -89,8 +85,7 @@ class AlignedDialogRoute<T> extends RawDialogRoute<T> {
     Duration? duration,
     bool avoidOverflow = false,
     Offset offset = Offset.zero,
-  })  : assert(barrierDismissible != null),
-        super(
+  }) : super(
           pageBuilder: (BuildContext buildContext, Animation<double> animation,
               Animation<double> secondaryAnimation) {
             final Widget pageChild = Builder(builder: builder);
