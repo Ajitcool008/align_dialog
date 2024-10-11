@@ -1,0 +1,19 @@
+name: align_dialog
+description: Show a locally/globally aligned dialog with custom transtion animation.
+version: 0.0.1
+homepage: https://github.com/Ajitcool008/align_dialog.git
+
+environment:
+  sdk: ">=3.1.5 <4.0.0"
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
